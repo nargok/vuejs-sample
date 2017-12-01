@@ -9,7 +9,9 @@
 <body>
   <h1>Hello Vue!</h1>
   <div id="app">
-    count: {{ count }}
+    <div v-show="showFlg">
+      表示されないけどDOMにいる
+    </div>
   </div>
   <script src="lib/new.js" type="text/javascript"></script>      
   <script src="lib/increment.js" type="text/javascript"></script>      
