@@ -9,17 +9,13 @@
 <body>
   <h1>Hello Vue!</h1>
   <div id="app">
-    <input type="checkbox" id="kongou" value="Kongou"  v-model="checkedNames">
-    <label for="kongou">Kongou</label>
-    <input type="checkbox" id="hiei" value="Hiei"  v-model="checkedNames">
-    <label for="hiei">Hiei</label>
-    <input type="checkbox" id="haruna" value="Haruna"  v-model="checkedNames">
-    <label for="haruna">Haruna</label>
-    <input type="checkbox" id="kirishima" value="Kirishima"  v-model="checkedNames">
-    <label for="kirishima">Kirishima</label>
+    <input type="radio" id="fm" value="FM"  v-model="modulation">
+    <label for="fm">FM</label>
+    <input type="radio" id="am" value="AM"  v-model="modulation">
+    <label for="am">AM</label>
     <br>
-    <span>{{ checkedNames }}</span>
+    <span>Modulation: {{ modulation }}</span>
   </div>
-  <script src="lib/v-model_03.js" type="text/javascript"></script>          
+  <script src="lib/v-model_04.js" type="text/javascript"></script>          
 </body>
 </html>
