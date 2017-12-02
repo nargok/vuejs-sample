@@ -9,15 +9,15 @@
 <body>
   <h1>Hello Vue!</h1>
   <div id="app">
-    <select v-model="hisyo">
-      <option disabled value="">秘書官を選んでください</option>
+    <select v-model="secretaries" multiple>
+      <option disabled value="">秘書官を選んでください(複数選択可)</option>
       <option>金剛</option>
       <option>比叡</option>
       <option>榛名</option>
       <option>霧島</option>
     </select>
-    <span>秘書官: {{ hisyo }}</span>
+    <span>秘書官: {{ secretaries }}</span>
   </div>
-  <script src="lib/v-model_05.js" type="text/javascript"></script>          
+  <script src="lib/v-model_06.js" type="text/javascript"></script>          
 </body>
 </html>
