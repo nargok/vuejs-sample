@@ -9,13 +9,15 @@
 <body>
   <h1>Hello Vue!</h1>
   <div id="app">
-    <input type="radio" id="fm" value="FM"  v-model="modulation">
-    <label for="fm">FM</label>
-    <input type="radio" id="am" value="AM"  v-model="modulation">
-    <label for="am">AM</label>
-    <br>
-    <span>Modulation: {{ modulation }}</span>
+    <select v-model="hisyo">
+      <option disabled value="">秘書官を選んでください</option>
+      <option>金剛</option>
+      <option>比叡</option>
+      <option>榛名</option>
+      <option>霧島</option>
+    </select>
+    <span>秘書官: {{ hisyo }}</span>
   </div>
-  <script src="lib/v-model_04.js" type="text/javascript"></script>          
+  <script src="lib/v-model_05.js" type="text/javascript"></script>          
 </body>
 </html>
